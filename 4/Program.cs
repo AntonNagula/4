@@ -16,7 +16,7 @@ namespace _4
             {
                 Console.WriteLine("Введите колличество белых мышей");
                 parse = Int32.TryParse(Console.ReadLine(), out White);
-                if (White > 0 && parse == true)
+                if (White > 0 && White < 1000 && parse == true)
                 {
                     condition = false;
                 }
@@ -26,7 +26,7 @@ namespace _4
             {
                 Console.WriteLine("Введите колличество черных мышей");
                 parse = Int32.TryParse(Console.ReadLine(), out Black);
-                if (Black > 0 && parse == true)
+                if (Black > 0 && Black<1000 && parse == true)
                 {
                     condition = false;
                 }
